@@ -6,3 +6,5 @@ int num3 = Convert.ToInt32(Console.ReadLine());
 int res = (num3 / 10) % 10;
 
 Console.WriteLine(res);
+
+//Решено
