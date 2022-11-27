@@ -2,17 +2,17 @@
 // Если число трехзначное - выводим третью цифру этого числа.
 // Если числе НЕ трехзначное - выводим сообщение что третьей цифры нет.
 
-int num3 = Convert.ToInt32(Console.ReadLine());
+int num = Convert.ToInt32(Console.ReadLine());
 
-if (num3 < 100 | num3 > -100)
+if (num > -100 && num < 100)
 {
-    Console.WriteLine("Ошибка ввода.Число не является трехзначным.");
+    Console.WriteLine("Ошибка ввода.Введите минимум трехзначное число.");
 }
 else
-{
-    if(num3 > 99 | num3 < -99)
-    {
-        int last = num3 % 10;
-        Console.WriteLine(last);
-    }
+{ 
+  if(num > -1000 && num < -99 | num > 99 && num < 1000)
+  {
+    num = num % 10;
+    Console.WriteLine(num);
+  }
 }
