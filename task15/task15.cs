@@ -4,12 +4,7 @@
 Console.WriteLine("Введите день недели (число от 1 до 7):");
 int day = Convert.ToInt32(Console.ReadLine());
 
-if (day > 7)
-{
-   Console.WriteLine("Ошибка ввода. Введите число от 1 до 7."); 
-}
-
-if (day < 1)
+if (day < 1 | day > 7)
 {
    Console.WriteLine("Ошибка ввода. Введите число от 1 до 7."); 
 }
