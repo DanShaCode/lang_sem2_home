@@ -15,15 +15,12 @@ else
     num = num % 10;
     Console.WriteLine(num);
   }
-  else
-  {
-    int numRes = 0;
-    for (int i = 0; num > -1000 | num < 1000; i++)
-    {
-        numRes = num / 10;
-    }
-    numRes = numRes % 10;
-    Console.WriteLine(numRes); 
-  }
+}
+
+if(num < -1000 | num > 1000)
+{
+    num = num / 10;
+    num = num % 10;
+    Console.WriteLine(num);
 }
 
